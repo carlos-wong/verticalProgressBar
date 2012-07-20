@@ -18,6 +18,7 @@ public final class R {
         public static final int progress_color_vertical=0x7f020004;
     }
     public static final class id {
+        public static final int button1=0x7f060001;
         public static final int t320100_mypb=0x7f060000;
     }
     public static final class layout {

@@ -12,11 +12,16 @@
     <ProgressBar
         android:id="@+id/t320100_mypb"
         style="@style/progressBar"
-        android:layout_width="10dip"
+        android:layout_width="50dip"
         android:layout_height="100dip"
         android:layout_gravity="center"
         android:layout_marginLeft="5dip"
         android:max="100" />
-
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 
 </LinearLayout>
