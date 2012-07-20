@@ -9,6 +9,15 @@
 		CONDITIONS OF ANY KIND, either express or implied. See the License for
 		the specific language governing permissions and limitations under the
 		License.
+		
+		<gradient 的analge是指颜色渐变的方向原始角度为0，当调整这个值的时候颜色渐变会根据这个值来进行渐变
+		color 有关的三个值分别指的是颜色的起始值。用来设置进度条从开头开始走到结束的颜色调整
+		                    android:centerY
+		                    android:centerX
+		这两个值都是和                android:centerColor
+		有关系用来设定这个中间颜色的位置。但是X,Y是有冲突的。X优先级最高
+		
+		>
 -->
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
@@ -18,9 +27,9 @@
             <corners android:radius="10dip" />
 
             <gradient
-                android:angle="90"
+                android:angle="180"
                 android:centerColor="#ff5a5d5a"
-                android:centerX="0.75"
+                android:centerX="0.9"
                 android:endColor="#ff747674"
                 android:startColor="#ff9d9e9d" />
         </shape>
@@ -34,10 +43,10 @@
 
                 <gradient
                     android:angle="90"
-                    android:centerColor="#FF9900"
-                    android:centerX="0.75"
-                    android:endColor="#FF9900"
-                    android:startColor="#FF9900" />
+                    android:centerColor="#ff5a5d5a"
+                    android:centerY="0.9"
+                    android:endColor="#0000FF"
+                    android:startColor="#FF0000" />
             </shape>
         </clip>
     </item>
