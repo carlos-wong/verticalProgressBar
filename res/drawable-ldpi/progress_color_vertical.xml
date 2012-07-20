@@ -18,11 +18,17 @@
 		有关系用来设定这个中间颜色的位置。但是X,Y是有冲突的。X优先级最高
 		
 		>
+		android:radius 代表shap形状的拐角
 -->
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item android:id="@android:id/background">
+    <!-- <item
+        android:id="@android:id/background"
+        android:width="48px"
+        android:height="48px"
+        android:drawable="@drawable/login_loading_bg">
+        
         <shape>
             <corners android:radius="10dip" />
 
@@ -33,11 +39,14 @@
                 android:endColor="#ff747674"
                 android:startColor="#ff9d9e9d" />
         </shape>
-    </item>
+       
+    </item> -->
     <item android:id="@android:id/progress">
         <clip
             android:clipOrientation="vertical"
+            android:drawable="@drawable/login_loading_part"
             android:gravity="bottom" >
+            <!--
             <shape>
                 <corners android:radius="10dip" />
 
@@ -48,6 +57,7 @@
                     android:endColor="#0000FF"
                     android:startColor="#FF0000" />
             </shape>
+            -->
         </clip>
     </item>
 

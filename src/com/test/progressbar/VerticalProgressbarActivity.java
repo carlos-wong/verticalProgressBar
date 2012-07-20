@@ -18,7 +18,6 @@ public class VerticalProgressbarActivity extends Activity {
 		setContentView(R.layout.main);
 		progress = (ProgressBar) findViewById(R.id.t320100_mypb);
 		Button setBtn = (Button) findViewById(R.id.button1);
-		progress.setProgress(100);
 
 		setBtn.setOnClickListener(new OnClickListener() {
 
