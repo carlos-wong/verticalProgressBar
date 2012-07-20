@@ -16,6 +16,7 @@ public class VerticalProgressbarActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		i = 0;
 		progress = (ProgressBar) findViewById(R.id.t320100_mypb);
 		Button setBtn = (Button) findViewById(R.id.button1);
 
@@ -25,6 +26,7 @@ public class VerticalProgressbarActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				i = i + 10;
+				
 				progress.setProgress(i);
 			}
 		});
